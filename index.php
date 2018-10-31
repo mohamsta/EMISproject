@@ -55,7 +55,8 @@
             position: relative;
             text-align: center;
             color: white;
-        }
+
+	}
 
         .bottom-left {
             position: absolute;
