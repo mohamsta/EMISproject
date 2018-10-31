@@ -78,7 +78,7 @@
         }
     </style>
     <div class="container">
-        <img src="TopHeader.png" alt="hostpial wallpaper" width=100%>
+        <img src="mainImage.png" alt="hostpial wallpaper" width=100%>
         <div class="bottom-left">
             <h1 style="font-size:50px;">Thank Records</h1>
 	    <h4>Best EMIS service online</h4>
