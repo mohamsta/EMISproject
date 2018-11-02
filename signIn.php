@@ -6,7 +6,7 @@ include('topMenu.php');
 echo'<body>
 	<div style="margin: auto; text-align: center;">
 	<form method="post">
-	<label>Username:</label>
+	<br/><br/><br/><label>Username:</label>
 	<input type="text" placeholder="username" name="username"><br/>
 	<br/>
 	<label>Password:</label>
