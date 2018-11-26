@@ -1,3 +1,6 @@
+<?php
+include("topMenu.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +15,7 @@ body {
     width: 170px;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 40;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -46,19 +49,23 @@ body {
 <body>
 
 <div class="sidenav">
-  <a href="#about">About Us</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Link?</a>
-  <a href="#aNOTHER 1">aNOTHER 1</a>
-  <a href="#anOTHER 1">anOTHER 1</a>
-  <a href="#anoTHER 2">anoTHER 2</a>
-  <a href="#L1">LAST 1</a>
+  <a href="#about">Main Prof</a>
+  <a href="#services">Account details</a>
+  <a href="#make app.">make appt.</a>
+  <a href="#cancel app.">cancel appt.</a>
+  <a href="#thats it">view appts</a>
+  <a href="#info">update info</a>
 </div>
 
 <div class="main">
-  <h2>SUPER SIDE BAR</h2>
-  <p>This sidebar is full of bull height (100%) and always shown like dis.</p>
-</p>
+<?php
+echo'	
+  <h2>Select one of the following</h2>
+  <p>
+	';
+	include('Acount_Details.php');
+echo'</p>';
+?>
 </div>
      
 </body>

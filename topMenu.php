@@ -36,6 +36,7 @@ echo '<html>
 		print('<a href="signOut.php">Sign Out</a>');
 		print('<a href = "activityMenu.php">Activity Menu</a>');
 	}
+	print('<a href="ActivityPage.php">ActivityPage</a>');
 	echo '</div>';
 	echo '</head>';	
 ?>

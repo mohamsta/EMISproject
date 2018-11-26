@@ -3,6 +3,19 @@ session_start();
 
 include('topMenu.php');
 
+$servername ="localhost";
+$username="EMISAdmin";
+$password="adPass";
+try	{
+		$conn = new PDO("mysql:host=$servername;dbname=EMISdb", $username, $password);
+		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		echo"Connected successfully";
+
+	}
+catch(PDOException $e){
+		echo "Connection failed: " .$e->getMessage();
+	}
+
 echo'<body>
 	<div style="margin: auto; text-align: center;">
 	<form method="post">
