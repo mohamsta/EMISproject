@@ -12,4 +12,12 @@ echo'
 echo'</p>'
 ?>
 
+<?php
+echo '<div class="container">
+	<img src="fake-happy.jpg"width=30%>
+        <div class="centered"><h1> BYE</h1>
+        </div>
+        </div>';
+?>
+
 
