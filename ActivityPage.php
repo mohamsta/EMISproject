@@ -50,11 +50,11 @@ body {
 
 <div class="sidenav">
   <a href="#about">Main Prof</a>
-  <a href="#services">Account details</a>
-  <a href="#make app.">make appt.</a>
-  <a href="#cancel app.">cancel appt.</a>
-  <a href="#thats it">view appts</a>
-  <a href="#info">update info</a>
+  <a href="#services">Account Details</a>
+  <a href="#make app.">Make Appt.</a>
+  <a href="#cancel app.">Cancel Appt.</a>
+  <a href="#thats it">View Appt.</a>
+  <a href="#info">Update Info</a>
 </div>
 
 <div class="main">

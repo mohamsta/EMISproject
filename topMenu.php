@@ -29,6 +29,7 @@ echo '<html>
 	</style>
 	<div class="topnav">';
 	if(!isset($_SESSION['loggedin'])){
+		print('<a href="aboutUs.php">About Us</a>');
 		print('<a href="signIn.php">Sign In</a>');
 		print('<a href="register.php">Register</a>');
 		print('<a href="index.php">HomePage</a>');
