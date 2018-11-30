@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $password_err = "Please enter your password.";
     }
-    else{
+     else{
         $password = trim($_POST["password"]);
     }
 
@@ -39,7 +39,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     if(empty($username_err) && empty($password_err))
     {
         
-        $sql = "SELECT id, username, password FROM users WHERE username = :username";
+        $sql = "SELECT id, username, password FROM Users WHERE username = :username";
 
         if($stmt = $pdo->prepare($sql)){
             $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
