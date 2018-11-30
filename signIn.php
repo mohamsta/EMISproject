@@ -66,11 +66,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
                             header("location: ActivityPage.php");
                         } else{
+                            echo"passworderr";
                             $password_err = "The username or password you entered is incorrect.";
                         }
 
                     }
                 }else{
+                    echo"username err";
                         $username_err = "The username or password you entered is incorrect.";
                 }
             } else{
