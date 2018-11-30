@@ -120,7 +120,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         <h2 style="text-align: center">Login</h2>
         <p style="text-align: center">Please fill in your credentials to Login</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div style="margin-bottom: 15px <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+            <div style="display: flex; flex-flow: column-reverse; margin-bottom: 1em <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <!--<label>Username</label>-->
                 <input type="text" required name="username" placeholder="Enter username..." style="display: block; width: 20%; height: 34px; padding: 6px 12px; margin: 0 auto;
                        font-size: 14px; line-height 1.42857143; color: #555; background-color: #fff; background-image: none;
@@ -133,7 +133,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                     <?php echo $username_err; ?>
                 </span>
             </div>
-            <div style="margin-bottom: 15px <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+            <div style="display: flex; flex-flow: column-reverse; margin-bottom: 1em <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <!--<label>Password</label>-->
                 <input type="text" required name="password" placeholder="Enter password..." style="display: block; width: 20%; height: 34px; padding: 6px 12px; margin: 0 auto;
                     font-size: 14px; line-height 1.42857143; color: #555; background-color: #fff; background-image: none;
