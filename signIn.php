@@ -52,7 +52,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                     if($row = $stmt->fetch())
                     {
                         $id = $row["id"];
-                        $username = $row["password"];
+                        $username = $row["username"];
                         $hashed_password  = $row["password"];
                         if(password_verify($password, $hashed_password))
                         {
