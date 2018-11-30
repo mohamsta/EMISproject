@@ -115,12 +115,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
  <html lang="en">
  <body>
     <div class="wrapper">
+        <p></p>
         <h2 style="text-align: center">Login</h2>
         <p style="text-align: center">Please fill in your credentials to Login</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div style="margin-bottom: 15px <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
-                <input type="text" name="username" style="display: block; width: 20%; height: 34px; padding: 6px 12px;
+                <input type="text" name="username" style="display: block; width: 20%; height: 34px; padding: 6px 12px; margin: 0 auto;
                        font-size: 14px; line-height 1.42857143; color: #555; background-color: #fff; background-image: none;
                        border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0 .075);
                        box-shadow: inset 0 1px 1px rgba(0,0,0 .075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
