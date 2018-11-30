@@ -140,7 +140,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                     border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0 .075);
                     box-shadow: inset 0 1px 1px rgba(0,0,0 .075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
                     -o-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;">
-                <label for="password">Password</label>
+                <label for="password" style="display: block; margin: 0px 5px">Password</label>
                 <span style="display: block; margin-top: 5px; margin-bottom: 5px; color: #737373">
                     <?php echo $password_err; ?>
                 </span>
