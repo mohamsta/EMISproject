@@ -14,7 +14,7 @@ require_once  "config.php";
 $username = $password = "";
 $username_err = $password_err = "";
 
-/*if($_SERVER["REQUEST_METHOD"] == "POST")
+if($_SERVER["REQUEST_METHOD"] == "POST")
 {
     
     //check if username is empty
@@ -82,10 +82,10 @@ $username_err = $password_err = "";
 
     unset($pdo);
 
-}*/
+}
 
 
-echo'<body>
+/*echo'<body>
 	<div style="margin: auto; text-align: center;">
 	<form method="post">
 	<br/><br/><br/><label>Username:</label>
@@ -99,7 +99,44 @@ echo'<body>
 	<br/><a href="register.php" style="text-decoration: none;">Register here</a>
 	<br/><a href="forgotpassword.php" style="text-decoration: none;">Forgot Password</a>
 	</div>
-	</body>';
+	</body>';*/
 ?>
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <body>
+    <div class="wrapper">
+        <h2>Login</h2>
+        <p>Please fill in your credentials to Login</p>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div style="margin-bottom: 15px <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label>Username</label>
+                <input type="text" name="username" style="display: block; width: 100%; height: 34px; padding: 6px 12px;
+                       font-size: 14px; line-height 1.42857143; color: #555; background-color: #fff; background-image: none;
+                       border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0 .075);
+                       box-shadow: inset 0 1px 1px rgba(0,0,0 .075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+                       -o-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;"
+                value="<?php echo $username; ?>">
+                <span style="display: block; margin-top: 5px; margin-bottom: 5px; color: #737373">
+                    <?php echo $username_err; ?>
+                </span>
+            </div>
+            <div style="margin-bottom: 15px <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>Password</label>
+                <input type="text" name="password" style="display: block; width: 100%; height: 34px; padding: 6px 12px;
+                    font-size: 14px; line-height 1.42857143; color: #555; background-color: #fff; background-image: none;
+                    border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0 .075);
+                    box-shadow: inset 0 1px 1px rgba(0,0,0 .075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+                    -o-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;">
+                <span style="display: block; margin-top: 5px; margin-bottom: 5px; color: #737373">
+                    <?php echo $password_err; ?>
+                </span>
+            </div>
+            <div style="margin-bottom: 15px">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+ </body>
+ </html>
 
 
