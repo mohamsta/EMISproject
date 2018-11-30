@@ -65,7 +65,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
                             echo"logged in";
 
-                            header("location: ActivityPage.php");
+                            //header("location: ActivityPage.php");
+                            header("location: welcomeTest.php");
                         } else{
                             $check = password_verify($password, $password_err);
                             echo $id,$username,$hashed_password;
