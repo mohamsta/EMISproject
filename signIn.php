@@ -62,6 +62,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
 
+                            echo"logged in";
+
                             header("location: ActivityPage.php");
                         } else{
                             $password_err = "The username or password you entered is incorrect.";
