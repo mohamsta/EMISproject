@@ -14,9 +14,9 @@ require_once  "config.php";
 $username = $password = "";
 $username_err = $password_err = "";
 
-if($_SERVER["REQUEST_METHOD"] == "POST")
+/*if($_SERVER["REQUEST_METHOD"] == "POST")
 {
-    echo"request";
+    
     //check if username is empty
     if(empty(trim($_POST["username"])))
     {
@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     //validate credentials
     if(empty($username_err) && empty($password_err))
     {
-        echo "validate";
+        
         $sql = "SELECT id, username, password FROM users WHERE username = :username";
 
         if($stmt = $pdo->prepare($sql)){
@@ -82,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
     unset($pdo);
 
-}
+}*/
 
 
 echo'<body>

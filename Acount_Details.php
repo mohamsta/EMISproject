@@ -1,4 +1,8 @@
+<?php
+include("ActivityBar.php");
+echo'
 <html>
+<div class="main">
 <h1>Account Details</h1>
 <body>
 <h2>General: </h2>
@@ -11,11 +15,12 @@
 <label>pass: </label>
 <input type="text" placeholder="new" name="pass"><br/>
 </form>
+</div>
 </body>
 </html>
 
+';
 
 
-
-
+?>
 
