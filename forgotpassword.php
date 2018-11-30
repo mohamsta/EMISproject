@@ -7,6 +7,8 @@ include("topMenu.php");
 
 <?php
 echo'
+test
+	<body>
 	<table>
 	    <thead align="center">Forgot Password</thead>
             
@@ -29,6 +31,7 @@ echo'
 		</br>
 		</br>
 		</table>
+		</body>
 ';
 
 ?>
