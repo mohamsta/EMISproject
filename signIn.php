@@ -66,7 +66,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
                             header("location: ActivityPage.php");
                         } else{
-                            echo"passworderr";
+                            $check = password_verify($password, $password_err);
+                            echo $check;
+                            echo" passworderr";
                             $password_err = "The username or password you entered is incorrect.";
                         }
 
