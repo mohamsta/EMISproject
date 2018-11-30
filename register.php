@@ -18,8 +18,8 @@ catch(PDOException $e){
 
 echo'<body>
 	<div style="margin: auto; text-align: left;">
-	<form method="post">
-	<br/><br/><br/><label>First Name:</label>
+	
+    <br/><br/><br/><label>First Name:</label>
 	<input type="text" placeholder="First Name" name="First Name"><br/>
 	<br/>
 	<label>Last Name:</label>
