@@ -54,7 +54,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                         $id = $row["id"];
                         $username = $row["username"];
                         $hashed_password  = $row["password"];
-                        if(password_verify($password, $hashed_password))
+                        //if(password_verify($password, $hashed_password))
+                        if($hashed_password == $password)
                         {
                             session_start();
 
