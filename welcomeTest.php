@@ -21,7 +21,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !==true){
             </b>Welcome to our site</h1>
     </div>
     <p>
-        <a href="logout.php" style="...">Log Out></a>
+        <a href="logout.php" style="...">Log Out ></a>
     </p>
 </body>
 </html>
