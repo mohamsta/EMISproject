@@ -13,6 +13,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !==true){
     header("location: signIn.php");
     exit;
 }
+else {
+    if ((time() - $_SESSION["loggedin_time"]) > 5) {
+        header("location:logout.php");
+        exit;
+    } else {
+        $_SESSION["loggedin_time"] = time();
+    }
+}
 ?>
 <html lang="en">
 <body>

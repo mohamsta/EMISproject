@@ -62,22 +62,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
+                            $_SESSION["loggedin_time"] = time();
 
-                            echo"logged in";
 
                             //header("location: ActivityPage.php");
                             header("location: welcomeTest.php");
                         } else{
-                            $check = password_verify($password, $password_err);
-                            echo $id,$username,$hashed_password;
-                            echo $password;
-                            echo" passworderr";
                             $password_err = "The username or password you entered is incorrect.";
                         }
 
                     }
                 }else{
-                    echo"username err";
+
                         $username_err = "The username or password you entered is incorrect.";
                 }
             } else{
@@ -92,6 +88,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     unset($pdo);
 
 }
+
 
 
 /*echo'<body>
@@ -120,7 +117,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         <h2 style="text-align: center">Login</h2>
         <p style="text-align: center">Please fill in your credentials to Login</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div style="display: flex; flex-flow: column-reverse; margin-bottom: 1em <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+            <div style="margin-bottom: 1em <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <!--<label>Username</label>-->
                 <input type="text" required name="username" placeholder="Enter username..." style="display: block; width: 20%; height: 34px; padding: 6px 12px; margin: 0 auto;
                        font-size: 14px; line-height 1.42857143; color: #555; background-color: #fff; background-image: none;
@@ -133,20 +130,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                     <?php echo $username_err; ?>
                 </span>
             </div>
-            <div style="display: flex; flex-flow: column-reverse; margin-bottom: 1em <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+            <div style="margin-bottom: 1em <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <!--<label>Password</label>-->
                 <input type="text" required name="password" placeholder="Enter password..." style="display: block; width: 20%; height: 34px; padding: 6px 12px; margin: 0 auto;
                     font-size: 14px; line-height 1.42857143; color: #555; background-color: #fff; background-image: none;
                     border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0 .075);
                     box-shadow: inset 0 1px 1px rgba(0,0,0 .075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
                     -o-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;">
-                <label for="password" style="display: block; margin: 0 50px">Password</label>
+                <label for="password" style="display: block; margin: 0 50px ">Password</label>
                 <span style="display: block; margin-top: 5px; margin-bottom: 5px; color: #737373">
                     <?php echo $password_err; ?>
                 </span>
             </div>
             <div style="margin-bottom: 15px">
-                <input type="submit" value="Login" style="margin: 0 auto">
+                <input type="submit" value="Login" style="display: block; margin: 0 auto">
             </div>
         </form>
  </body>
