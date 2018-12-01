@@ -25,6 +25,9 @@ else if (isset($_SESSION["username"])) {
 }
 ?>
 <html lang="en">
+<head>
+    <meta http-equiv="refresh" content="900">
+</head>
 <body>
     <div style="padding-bottom: 9px; margin: 40px 0 20px; border-bottom: 1px solid #eee;">
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]);?>
