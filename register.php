@@ -49,4 +49,13 @@ echo'<body>
 	</form>
 	</div>
 	</body>';
+
+echo'<h1> what you enetered </h1> <br>';
+echo $UsrName;
+echo '<br/>';
+echo $Pswrd;
+echo '<br/>';
+
+
 ?>
+
