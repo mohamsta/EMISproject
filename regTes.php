@@ -43,13 +43,16 @@ require_once"config.php";?>
 	  <input type="password" name="password_2">
 	</div><br/>
 	<div class="input-group">
-	  <button type="submit" class="btn" name="reg_user">Register</button>
+	  <button type="submit" class="btn" name="submit">Register</button>
 	</div><br/>
-  </form>
 <?php
-$sql = "INSERT INTO Users ( username, password, access)
-VALUES ($username, $Pswd, 1)";
-$pdo->exec($sql);
+if(array_key_exists('submit',$_POST)){
+	echo"reached hererereree";
+	$sql = "INSERT INTO Users ( username, password, access)
+	VALUES ($username, $Pswd, 1)";
+	$pdo->exec($sql);
+}
 ?>
+  </form>
 </body>
 </html>
