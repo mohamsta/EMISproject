@@ -4,7 +4,7 @@ session_start();
 include('topMenu.php');
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true)
 {
-    header("location: welcome.php");
+    header("location: welcomeTest.php");
     exit;
 
 }

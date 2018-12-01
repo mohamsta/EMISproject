@@ -7,13 +7,15 @@
  * This file is just to test the logout function
  */
 
+include('topMenu.php');
+
 session_start();
 
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !==true){
     header("location: signIn.php");
     exit;
 }
-else {
+else if (isset($_SESSION["username"])) {
     if ((time() - $_SESSION["loggedin_time"]) > 5) {
         header("location:logout.php");
         exit;
