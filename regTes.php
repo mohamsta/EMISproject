@@ -47,7 +47,9 @@ require_once"config.php";?>
 	</div><br/>
   </form>
 <?php
-$sql = "INSERT INTO Users (id, username, password)
-VALUES ('2', $username, $Pswd)";?>
+$sql = "INSERT INTO Users ( username, password, access)
+VALUES ($username, $Pswd, 1)";
+$pdo->exec($sql);
+?>
 </body>
 </html>
