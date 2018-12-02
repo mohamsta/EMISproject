@@ -51,7 +51,7 @@ body {
 <div class="sidenav">
   <a href="#about">Main Prof</a>
   <a href="Acount_Details.php">Account Details</a>
-  <a href="ActivityPage.php">Make Appt.</a>
+  <a href="Make_Appt.php">Make Appt.</a>
   <a href="Cancel_Appt.php">Cancel Appt.</a>
   <a href="#thats it">View Appt.</a>
   <a href="#info">Update Info</a>

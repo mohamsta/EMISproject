@@ -15,7 +15,7 @@ require_once"config.php";?>
 	<br/>
 	<div class="input-group">
 	  <label>Username</label>
-	  <input type="text" name="username"/>	</div><br/>
+	  <input type="text" name="userIn"/>	</div><br/>
 	<div class="input-group">
 	  <label>Email</label>
 	  <input type="email" name="email">
@@ -49,20 +49,23 @@ $servername = "localhost";
 $userDB = "EMISAdmin";
 $password = "adPass";
 $dbname = "EMISdb";
-$user=$_POST["username"];
+$user=$_POST["userIn"];
 $Pswd=$_POST["Pswd"];
+$ac=1;
 if(array_key_exists('submit',$_POST)){
 	echo".$user.";
 	
 	try{
 		$con = new PDO("mysql:host=$servername;dbname=$dbname", $userDB, $password);
     		$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql = "INSERT INTO Users ( username, password, access)
-		VALUES ($username, $Pswd, 1)";
+		$sql = "INSERT INTO Users (username, password, access)
+		VALUES ($user, $Pswd, $ac)";
+		echo"--touched--";
 		$con->exec($sql);
 		echo"--Registed Successfully--";
 	}
 	catch(PDOException $e){
+		echo $sql . "<br>" . $e->getMessage();
 		echo"--NOT REGISTERED--";
 	}
 
