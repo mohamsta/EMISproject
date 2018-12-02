@@ -31,7 +31,7 @@ echo '<html>
 	if(!isset($_SESSION['loggedin'])){
 		print('<a href="aboutUs.php">About Us</a>');
 		print('<a href="signIn.php">Sign In</a>');
-		print('<a href="register.php">Register</a>');
+		print('<a href="regTes.php">Register</a>');
 		print('<a href="index.php">HomePage</a>');
 	}else{
 		print('<a href="signOut.php">Sign Out</a>');
