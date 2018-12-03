@@ -1,19 +1,19 @@
 # EMISproject
 
+ ## how to get to server
+ * ssh into fox with abc123
+ * ssh into zerg@10.110.118.107
+ * enter password
+ * sudo -i [makes the machine admin mode to edit filed located next line]
+ * cd /var/www/html/ [where website is stored in]
+ * pull here 
+ 
 ## how to use git:
  * git pull https://github.com/mohamsta/EMISproject *!!!!!YES EVERY TIME!!!!!*
  * [make changes]
  * git add .
  * git commit -m "description"
  * git push https://github.com/mohamsta/EMISproject 
- 
- ## how to get to server
- * ssh into fox with abc123
- * ssh into zerg@10.110.118.107
- * not the password: ^Q39u2\*t@2
- * sudo -i [makes the machine admin mode to edit filed located next line]
- * cd /var/www/html/ [where website is stored in]
- * pull here 
  
  ## how to html
  * google
