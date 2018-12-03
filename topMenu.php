@@ -1,4 +1,5 @@
 <?php
+session_start();
 echo '<html>
 	<head>
 	<style>
@@ -28,16 +29,15 @@ echo '<html>
 	
 	</style>
 	<div class="topnav">';
+	print('<a href="aboutUs.php">About Us</a>');
 	if(!isset($_SESSION['loggedin'])){
-		print('<a href="aboutUs.php">About Us</a>');
 		print('<a href="signIn.php">Sign In</a>');
 		print('<a href="regTes.php">Register</a>');
-		print('<a href="index.php">HomePage</a>');
 	}else{
 		print('<a href="signOut.php">Sign Out</a>');
-		print('<a href = "activityMenu.php">Activity Menu</a>');
 	}
 	print('<a href="ActivityPage.php">ActivityPage</a>');
+	print('<a href="index.php">HomePage</a>');
 	echo '</div>';
 	echo '</head>';	
 ?>

@@ -4,7 +4,7 @@ session_start();
 include('topMenu.php');
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true)
 {
-    header("location: welcomeTest.php");
+    header("location: Main_Prof.php");
     exit;
 
 }
@@ -65,8 +65,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                             $_SESSION["loggedin_time"] = time();
 
 
-                            //header("location: ActivityPage.php");
-                            header("location: welcomeTest.php");
+                            header("location: ActivityPage.php");
+                           // header("location: Main_Prof.php");
                         } else{
                             $password_err = "The username or password you entered is incorrect.";
                         }
