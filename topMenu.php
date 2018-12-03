@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 echo '<html>
 	<head>
 	<style>
@@ -24,9 +25,8 @@ echo '<html>
 		color: #f2f2f2;
 		padding: 10px 12px;
 		text-decoration: none;
-		font-size: 17px;
+		font-size: 18px;
 	}
-	
 	</style>
 	<div class="topnav">';
 	print('<a href="aboutUs.php">About Us</a>');
