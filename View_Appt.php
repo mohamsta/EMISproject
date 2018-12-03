@@ -1,5 +1,7 @@
 <?php
 include("ActivityBar.php");
+include("moAlender.php");
+
 echo'
 <html>
 <div class="main">
@@ -8,7 +10,9 @@ echo'
 <form method="post">
 <p>To cancel or create new click the sidebar<p>
 <input type="text" placeholder="new" name="pass"><br/>
-</form>
+</form>';
+echo draw_calendar(12,2018);
+echo'
 </div>
 </body>
 </html>

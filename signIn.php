@@ -89,26 +89,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
 }
 
-
-
-/*echo'<body>
-	<div style="margin: auto; text-align: center;">
-	<form method="post">
-	<br/><br/><br/><label>Username:</label>
-	<input type="text" placeholder="username" name="username"><br/>
-	<br/>
-	<label>Password:</label>
-	<input type="text" placeholder="password" name="password"><br/>
-	<br/>
-	<input type="submit" value="Sign In">
-	</form>
-	<br/><a href="register.php" style="text-decoration: none;">Register here</a>
-	<br/><a href="forgotpassword.php" style="text-decoration: none;">Forgot Password</a>
-	</div>
-	</body>';*/
 ?>
-
- <!DOCTYPE html>
  <html lang="en">
  <body>
     <div class="wrapper">
@@ -125,7 +106,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                        box-shadow: inset 0 1px 1px rgba(0,0,0 .075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
                        -o-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
                 value="<?php echo $username; ?>">
-                <label for="username">Username</label>
+                <center><label for="username">Username</label></center>
                 <span style="display: block; margin-top: 5px; margin-bottom: 5px; color: #737373">
                     <?php echo $username_err; ?>
                 </span>
@@ -137,7 +118,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                     border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0 .075);
                     box-shadow: inset 0 1px 1px rgba(0,0,0 .075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
                     -o-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;">
-                <label for="password" style="display: block; margin: 0 50px ">Password</label>
+
+		<center><label for="password" style="display: block; margin: 0 50px ">Password</label></center>
                 <span style="display: block; margin-top: 5px; margin-bottom: 5px; color: #737373">
                     <?php echo $password_err; ?>
                 </span>
