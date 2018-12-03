@@ -59,6 +59,7 @@ if(array_key_exists('submit',$_POST)){
 		$con = new PDO("mysql:host=$servername;dbname=$dbname", $userDB, $password);
     		$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$sql = "INSERT INTO Users (username, password, access)
+		//colens
 		VALUES ($user, $Pswd, $ac)";
 		echo"--touched--";
 		$con->exec($sql);
