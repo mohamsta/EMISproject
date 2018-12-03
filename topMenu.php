@@ -36,7 +36,7 @@ echo '<html>
 	}else{
 		print('<a href="signOut.php">Sign Out</a>');
 	}
-	print('<a href="ActivityPage.php">ActivityPage</a>');
+	print('<a href="Main_Prof.php">ActivityPage</a>');
 	print('<a href="index.php">HomePage</a>');
 	echo '</div>';
 	echo '</head>';	

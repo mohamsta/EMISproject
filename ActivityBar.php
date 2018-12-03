@@ -54,7 +54,7 @@ body {
   <a href="Make_Appt.php">Make Appt.</a>
   <a href="View_Appt.php">View Appt.</a>
   <a href="Cancel_Appt.php">Cancel Appt.</a>
-  <a href="#info">Update Info</a>
+  <a href="Update_Info.php">Update Info</a>
 </div>
 
      

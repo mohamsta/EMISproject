@@ -27,7 +27,6 @@ require_once"config.php";?>
 	<br/>
 	<input type="radio" name="gender" />  Female</>
 	<input type="radio" name="gender" />  Male</>
-	<input type="radio" name="gender" />  Other</>
 	<br/><br/><div class="input-grooup">
 	  <label>SSN</label>
 	  <input type="text" name="ssn"/>
