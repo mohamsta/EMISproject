@@ -24,11 +24,10 @@ echo'
 	<div class="input-grooup">
 	  <input type="text" id="email"/>
 	</div>
-
 	
-	<button onclick="myFunction()">Disable Text field</button>
+	<button onclick="myFunction1()">Disable Text field</button>
 	<script>
-	function myFunction() {
+	function myFunction1() {
     		document.getElementById("email").disabled = true;
 	}
 	</script>
@@ -37,19 +36,22 @@ echo'
 echo'
 <p>New birthday</p>
 	<div class="input-grooup">
-	  <input type="text" id="bday"/>
+	  <input type="text" placeholder = "For corrections"  id="bday"/>
 	</div>
-
 	
-	<button onclick="myFunction()">Disable Text field</button>
+	<button onclick="myFunction2()">Disable Text field</button>
+	<br>
 	<script>
-	function myFunction() {
+	function myFunction2() {
     		document.getElementById("bday").disabled = true;
 	}
 	</script>
+	<br>
+
 <form method="post">
-<label>pass: </label>
-<input type="text" placeholder="new" name="password"><br/>
+<label> Password </label>
+<br>
+<input type="text" placeholder="Veify Identity" name="password"><br/>
 	<br>
 	<div class="input-group">
 	  <button type="submit" class="btn" name="submit">Submit information</button>
