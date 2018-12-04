@@ -2,7 +2,7 @@
 
  ## how to get to server
  * ssh into fox with abc123
- * ssh into zerg@10.110.118.107
+ * ssh into zerg@10.100.118.107
  * enter password
  * sudo -i [makes the machine admin mode to edit filed located next line]
  * cd /var/www/html/ [where website is stored in]
@@ -23,4 +23,3 @@
  # Por que es this really dumb
  * html esta dumb
  
- ## scott make this more professional ty ty 🙏🏾 😩 😁
