@@ -34,6 +34,7 @@ echo '<html>
 		print('<a href="signIn.php">Sign In</a>');
 		print('<a href="regTes.php">Register</a>');
 	}else{
+		echo"yoo $sessionId";
 		print('<a href="signOut.php">Sign Out</a>');
 	}
 	print('<a href="Main_Prof.php">ActivityPage</a>');
