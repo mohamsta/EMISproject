@@ -51,16 +51,15 @@ $dbname = "EMISdb";
 $user=$_POST["userIn"];
 $Pswd=$_POST["Pswd"];
 $ac=1;
+$name=$_POST["name"];
 if(array_key_exists('submit',$_POST)){
-	echo".$user.";
-	
 	try{
 		$con = new mysqli("localhost","EMISAdmin","adPass","EMISdb");
-		$sql = "INSERT INTO Users (username, password, access)
-		VALUES ('$user', '$Pswd', '$ac')";
+		$sql = "INSERT INTO Users (username,name, password, access)
+		VALUES ('$user', '$name',$Pswd', '$ac')";
 		echo"--touched--";
 		$con->query($sql);
-		echo"--Registed Successfully--";
+		echo"--.$name. you have Registed Successfully--";
 	}
 	catch(PDOException $e){
 		echo $sql . "<br>" . $e->getMessage();
