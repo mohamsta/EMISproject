@@ -3,7 +3,7 @@ include('ActivityBar.php');
 ?>
 <html>
 <div class="main">
-<center><h1>Patient Log for <?php print( date("d/m/y"));?></h1></center>
+<center><h1>Patient Log for <?php print( date("m/d/y"));?></h1></center>
 <p>Patient:</p>
 <p>Age:</p>
 <p>Doctor:</p><?php ?>

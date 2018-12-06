@@ -12,6 +12,11 @@ echo'
 <div class = main>
 <p> Here is your main profile page, you can do the following:<br/>
 <ul>
+';
+if(!isset($_SESSION['loggedin'])){
+	echo'<center><li>!You are NOT logged IN!</li></center>';
+}
+echo'
 	<li>View account Details</li>
 	<li>Make appointments</li>
 	<li>View Appointments</li>
