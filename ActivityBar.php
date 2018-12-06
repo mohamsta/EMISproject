@@ -56,7 +56,7 @@ body {
   <a href="Cancel_Appt.php">Cancel Appt.</a>
   <a href="Update_Info.php">Update Info</a>>
 <?php
-	print('<a href="Patient_Info.php">Patient Information</a>>');
+	print('<a href="Todays_Appt.php">Today\'s Appointment</a>>');
 ?>
 </div>
 

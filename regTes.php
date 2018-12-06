@@ -55,13 +55,11 @@ if(array_key_exists('submit',$_POST)){
 	echo".$user.";
 	
 	try{
-		$con = new PDO("mysql:host=$servername;dbname=$dbname", $userDB, $password);
-    		$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$con = new mysqli("localhost","EMISAdmin","adPass","EMISdb");
 		$sql = "INSERT INTO Users (username, password, access)
-		//colens
-		VALUES ($user, $Pswd, $ac)";
+		VALUES ('$user', '$Pswd', '$ac')";
 		echo"--touched--";
-		$con->exec($sql);
+		$con->query($sql);
 		echo"--Registed Successfully--";
 	}
 	catch(PDOException $e){
