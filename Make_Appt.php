@@ -6,7 +6,7 @@ include("moAlender.php");
 <html lang ="en">
 <div class="main">
 <body>
-<h3>Pick date to schedule an appointment now!</h3>
+<h3>Pick date to schedule appointment now!</h3>
 <form method="post">
 <label>Date: </label>
 <input type="text" placeholder="new" name="pass"><br/>
