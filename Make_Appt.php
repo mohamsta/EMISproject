@@ -1,6 +1,7 @@
 <?php
 include("ActivityBar.php");
 include("moAlender.php");
+
 echo'
 <html>
 <div class="main">
