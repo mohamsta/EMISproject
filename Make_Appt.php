@@ -5,7 +5,7 @@ echo'
 <html>
 <div class="main">
 <body>
-<h3>Pick a date to sign up</h3>
+<h3>Pick a date to schedule an appointment!</h3>
 <form method="post">
 <label>Date: </label>
 <input type="text" placeholder="new" name="pass"><br/>
