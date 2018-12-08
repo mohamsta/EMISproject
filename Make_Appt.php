@@ -36,7 +36,11 @@ include("form.php");
 <p>Date: <input type="text" id="datepicker"></p>
 
 <button onclick="myFunction()">Set Appointment Time</button>
-
+    <script>
+        $( function myFunction(){
+                noStrings();
+        })
+                </script>
 </div>
 </body>
 </html>
