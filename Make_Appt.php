@@ -1,11 +1,12 @@
 <?php
 include("ActivityBar.php");
 include("moAlender.php");
+include("form.php");
 ?>
 
 <html lang ="en">
 <div class="main">
-    <body>
+    <body bgcolor="#67e5b7">
     <h3>Pick date to schedule appointment now!</h3>
     <form method="post">
         <label>Date: </label>
@@ -26,6 +27,7 @@ include("moAlender.php");
         <script>
             $( function() {
                 $( "#datepicker" ).datepicker({
+                    $( "#datepicker" ).resiz
                     showButtonPanel: true
                 });
             });
