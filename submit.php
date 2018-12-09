@@ -17,8 +17,8 @@
 <!-- Getting the output from the form value provided through 'form.php' -->
 First Name: <?php echo $_POST['Fname']; // displaying the value of First Name provided in 'Form.php' while submitting the form ?><br/>
 Last Name: <?php echo $_POST['Lname']; // displaying the value of Last Name provided in 'Form.php' while submitting the form ?><br/>
-Username: <?php echo $_POST['Username']; // displaying the value of Username provided in 'Form.php' while submitting the form ?><br/>
-Password: <?php echo $_POST['Password']; // displaying the value of Password provided in 'Form.php' while submitting the form ?><br/>
+Confirm Date: <?php echo $_POST['ConfirmDate']; // displaying the value of Username provided in 'Form.php' while submitting the form ?><br/>
+Requested Time: <?php echo $_POST['ReqTime']; // displaying the value of Password provided in 'Form.php' while submitting the form ?><br/>
 <!-- End of getting the value from the submitted form -->
 </body>
 </html>
