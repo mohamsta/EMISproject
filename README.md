@@ -1,25 +1,17 @@
 # EMISproject
+-
+## Mission Statement
+Sometimes people can't always set up their appointments via a phone call. Due to long wait lines, audio confirmation for everything, confusion, and not being able to have information layed out. Our goal is to chagne that right from your house. Our EMIS project will let us register you to appointments and view infomration when you are at your house, or even on the go.
 
- ## how to get to server
- * ssh into fox with abc123
- * ssh into zerg@10.100.118.107
- * enter password
- * sudo -i [makes the machine admin mode to edit filed located next line]
- * cd /var/www/html/ [where website is stored in]
- * pull here 
+## Goal
+Create a website for patients to manage their medical stuff online
  
-## how to use git:
- * git pull https://github.com/mohamsta/EMISproject *!!!!!YES EVERY TIME!!!!!*
- * [make changes]
- * git add .
- * git commit -m "description"
- * git push https://github.com/mohamsta/EMISproject 
+## Expectations
+- Get the sign in registering to work
+- Set up appointments
+- View patient info
+- Get a chatbox for patients.
  
- ## how to html
- * google
- ## what do i do 
- * any of the requirements on the srs 
- 
- # Por que es this really dumb
- * html esta dumb
- 
+## Upcomming changes
+- More detailed/secure log in
+- Proper registration with confirmation emails
