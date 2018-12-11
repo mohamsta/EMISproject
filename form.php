@@ -8,14 +8,15 @@
 ?>
 
 <?php
-include("topMenu.php");
-echo '<div><form action="submit.php" method="POST">
+include("ActivityBar.php");
+echo '<div class = main><div><form action="submit.php" method="POST">
     <input type="text" name="Fname" value="" placeholder="First Name"><br/>
     <input type="text" name="Lname" value="" placeholder="Last Name"><br/>
     <input type="text" name="ConfirmDate" value="" placeholder="Confirm Date"><br/>
     <input type="text" name="ReqTime" value="" placeholder="Requested Time"><br/>
     <input type="submit" name="Confirm Appointment">
 </formr
+</div>
 </div>';
 ?>
 
