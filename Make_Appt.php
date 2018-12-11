@@ -1,12 +1,11 @@
 <?php
 include("ActivityBar.php");
 include("moAlender.php");
-include("form.php");
 ?>
 
 <html lang ="en">
 <div class="main">
-<body bgcolor="67e5b7">
+<body bgcolor="#67e5b7">
 <h3>Pick date to schedule appointment now!</h3>
 <form method="post">
 <label>Date: </label>
@@ -34,13 +33,12 @@ include("form.php");
 
 </head>
 <p>Date: <input type="text" id="datepicker"></p>
+<button onclick="form.php">Set Appointment Time</button>
+<form method="post" action="form.php" id="form1">       
+    <button type="submit" form="form1" >Run my PHP code</button>
+</form>
 
-<button onclick="myFunction()">Set Appointment Time</button>
-    <script>
-        $( function myFunction(){
-                noStrings();
-        })
-                </script>
+
 </div>
 </body>
 </html>
