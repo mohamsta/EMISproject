@@ -1,13 +1,14 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: scottlandunderwood
+ * User: scottlandunderwood, lord mo 
  * Date: 2018-12-08
  * Time: 15:55
  */
 ?>
 
 <?php
+include("topMenu.php");
 echo '<div><form action="submit.php" method="POST">
     <input type="text" name="Fname" value="" placeholder="First Name"><br/>
     <input type="text" name="Lname" value="" placeholder="Last Name"><br/>
