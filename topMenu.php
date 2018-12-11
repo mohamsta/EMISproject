@@ -30,6 +30,7 @@ echo '<html>
 	</style>
 	<div class="topnav">';
 	print('<a href="aboutUs.php">About Us</a>');
+	print('<a href="contactUs.php">Contact Us</a>');
 	if(!isset($_SESSION['loggedin'])){
 		print('<a href="signIn.php">Sign In</a>');
 		print('<a href="regTes.php">Register</a>');
