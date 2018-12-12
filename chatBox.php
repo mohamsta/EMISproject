@@ -62,7 +62,19 @@ include("ActivityBar.php");
   <span class="time-left">11:05</span>
 </div>
   <p>Enter Message</p>
-  <input type="text" name="userIn"/>
+  <input type="text" name="chatIn"/>
+  <button type="submit" class="btn" name="chatSubmit">send</button>
+  <?php
+  $sendMe = $_POST["chatIn"];
+  if(array_key_exists('chatSubmit',$_POST)){
+    echo'
+    <div class="containerBox">
+  <p>$sendMe</p>
+    <span class="time-right">11:02</span>
+  </div>';
+
+
+  ?>
 </div>
 </body>
 </html>
