@@ -41,40 +41,27 @@ include("ActivityBar.php");
 <body>
 <div class = main>
 <h2>Chat Messages</h2>
-
-<div class="containerBox">
-  <p>Hello. How are you today?</p>
-  <span class="time-right">11:00</span>
-</div>
-
-<div class="containerBox darker">
-  <p>Hey! I'm fine. Thanks for asking!</p>
-  <span class="time-left">11:01</span>
-</div>
-
-<div class="containerBox">
-  <p>Sweet! So, what do you wanna do today?</p>
-  <span class="time-right">11:02</span>
-</div>
-
-<div class="containerBox darker">
-  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-  <span class="time-left">11:05</span>
-</div>
+  <p>Due to privacy your messages will be removed on refresh/leave<p>
   <p>Enter Message</p>
-  <input type="text" name="chatIn"/>
-  <button type="submit" class="btn" name="chatSubmit">send</button>
-  <?php
-  $sendMe = $_POST["chatIn"];
-  if(array_key_exists('chatSubmit',$_POST)){
-    echo'
+<form method="POST" action=''>  
+<?php
+echo'
+<div class="input-group"> 
+ <input type="text" name="chatIn"/></div>
+ <div class="input-group"> 
+<input type="submit" class="btn" name="submit">
+</form>';
+$sendMe = $_POST["chatIn"];
+$submit = $_POST["submit"];
+if(isset($submit)==TRUE){
+	echo'
     <div class="containerBox">
-  <p>$sendMe</p>
+  <p>'. $sendMe .'</p>
     <span class="time-right">11:02</span>
   </div>';
-
-
-  ?>
+unset($submit);
+}
+?>
 </div>
 </body>
 </html>
