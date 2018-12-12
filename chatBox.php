@@ -61,6 +61,7 @@ include("ActivityBar.php");
   <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
   <span class="time-left">11:05</span>
 </div>
+  <p>Enter Message</p><textarea></textarea>
 </div>
 </body>
 </html>
