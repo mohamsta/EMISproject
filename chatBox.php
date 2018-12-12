@@ -39,7 +39,7 @@ include("ActivityBar.php");
 </style>
 </head>
 <body>
-
+<div class = main>
 <h2>Chat Messages</h2>
 
 <div class="containerBox">
@@ -61,7 +61,7 @@ include("ActivityBar.php");
   <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
   <span class="time-left">11:05</span>
 </div>
-
+</div>
 </body>
 </html>
 
