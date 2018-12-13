@@ -1,12 +1,12 @@
 # EMISproject
 -
 # Installation instructions to Run Software
-use "ssh" to remote-login to server created by instructor.
-ssh zerg@10.100.118.107
-enter password that was created by instructor
-type the following command: sudo -i
-re-enter password
-change directory (cd) to the following: /var/www/html/
+- use "ssh" to remote-login to server created by instructor.
+- ssh zerg@10.100.118.107
+- enter password that was created by instructor
+- type the following command: sudo -i
+- re-enter password
+- change directory (cd) to the following: /var/www/html/
 
 To view the web application:
 Use the Google Chrome Web Browser and type "10.100.118.107" to view the web application.
