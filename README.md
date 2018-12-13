@@ -13,10 +13,10 @@ Use the Google Chrome Web Browser and type "10.100.118.107" to view the web appl
 
 
 ## Mission Statement
-Sometimes people can't always set up their appointments via a phone call. Due to long wait lines, audio confirmation for everything, confusion, and not being able to have information layed out. Our goal is to chagne that right from your house. Our EMIS project will let us register you to appointments and view infomration when you are at your house, or even on the go.
+Sometimes people can't always set up their appointments via a phone call. Due to long wait times, automated audio confirmation for most general tasks, and not being able to have information presented in a seamless, organized manner, our goal is to chagne those inconveniences from your web browser. Our EMIS web application will allows us to register you to appointments and view information when you are at your house, or even on the go.
 
 ## Goal
-Create a website for patients to manage their medical stuff online
+Create a web application for patients to manage their medical information online. This web application is usable by several stakeholders including: patients, office staff, nurses, and doctors.
  
 ## Expectations
 - Get the sign in registering to work
